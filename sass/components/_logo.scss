@@ -1,0 +1,14 @@
+.logo {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: calc(31/26);
+    color: $accent-color;
+}
+
+// FOOTER LOGO
+.footer__logo {
+    margin-bottom: 10px;
+    display: block;
+}

@@ -1,0 +1,21 @@
+.regular-customers__title {
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    margin-bottom: 50px;
+}
+
+.regular-customers__list {
+    display: flex;
+
+    .regular-customers__item {
+        width: 170px;
+
+        &:not(:last-child) {
+            margin-right: 30px;
+        }
+    }
+}
+
