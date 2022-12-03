@@ -3,7 +3,10 @@
   screen and (min-resolution: 192dpi),
   screen and (min-resolution: 2dppx) {
   .hero__section {
-    background-image: url(../images/r-hero-background-image.jpg);
+    background-image: 
+    linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+    url(/images/r-hero-background-image-tablet.jpg);
   }
 }
 

@@ -659,10 +659,10 @@ img {
 .hero__section {
   background-color: #2F303A;
   padding: 200px 0;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/r-hero-background-image.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/r-hero-background-image-mobile.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
+  background-size: 480px 400px;
 }
 
 .benefits__item-icon-container {
@@ -895,7 +895,7 @@ img {
 
 @media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
   .hero__section {
-    background-image: url(../images/r-hero-background-image.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(/images/r-hero-background-image-tablet.jpg);
   }
 }
 @media (max-width: 767px) {

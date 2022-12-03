@@ -18,10 +18,10 @@ img {
     background-image:
         linear-gradient(rgba(47, 48, 58, 0.4),
             rgba(47, 48, 58, 0.4)),
-        url(../images/r-hero-background-image.jpg);
+        url(../images/r-hero-background-image-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size: 480px 400px;
 }
 
 // BENEFITS IMG
