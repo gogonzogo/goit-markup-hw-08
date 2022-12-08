@@ -1,25 +1,30 @@
 @use '../utilities/variables.scss';
 
 .benefits__section {
-    width: 480px;
+    min-width: 320px;
 }
 
 .benefits__container {
-   width: 480px;
+    min-width: 320px;
 }
 
 .benefits__list {
-    width: 450px;
+    display: flex;
+    flex-direction: column;
+    align-items: around;
 
     .benefits__item:not(:last-child) {
         margin-bottom: 30px;
     }
 
     .benefits__item-icon-container {
-        padding: 25px 190px;
+        padding: 25px 96px;
         background-color: variables.$background-medium-color;
         border: variables.$background-medium-color;
         border-radius: 4px;
+        display: flex;
+        justify-content: center;
+
 
         .benefits__icon {
             fill: currentColor;
@@ -45,4 +50,3 @@
     }
 
 }
-

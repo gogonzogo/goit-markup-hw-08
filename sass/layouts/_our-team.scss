@@ -2,7 +2,7 @@
 
 // OUR TEAM
 .our-team__section {
-    width: 480px;
+    min-width: 320px;
     background-color: variables.$background-medium-color;
 
     .our-team__title {
@@ -54,33 +54,3 @@
         color: variables.$medium-text-color
     }
 }
-
-
-// .our-team__section{
-//     display: none;
-// }
-
-// @media all and (min-width: 768px) {
-
-
-//     .our-team__title {
-        
-//         padding-bottom: 50px;
-//     }
-
-//     .our-team__list {
-//         display: flex;
-
-//         .our-team__item {
-            
-
-//             &:not(:last-child) {
-//                 margin-right: 30px;
-//             }
-//         }
-
-        
-        
-//     }
-// }
-// }

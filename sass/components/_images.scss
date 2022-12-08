@@ -11,11 +11,9 @@ img {
 .hero__section {
     background-color: variables.$background-dark-color;
     padding: 118px 0;
-    background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url(/images/r-hero-background-image-mobile.jpg);
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)),
+        url(../images/r-hero-background-image-mobile.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -23,54 +21,63 @@ img {
     @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
     (min-resolution: 2dppx) {
-        background-image: linear-gradient(
-            rgba(47, 48, 58, 0.4),
-            rgba(47, 48, 58, 0.4)
-        ),
-        url(/images/r-hero-background-image-mobile-2x.jpg);
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/r-hero-background-image-mobile-2x.jpg);
     }
 
-    @media screen and (min-width: 768px) {
-        background-image: linear-gradient(
-                    rgba(47, 48, 58, 0.4), 
-                    rgba(47, 48, 58, 0.4)
-        ),
-        url(/images/r-hero-background-image-tablet.jpg);
-        
-    @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+    @media screen and (min-width: 480px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/r-hero-background-image-tablet.jpg);
+
+        @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
-            url(/images/r-hero-background-image-tablet-2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/r-hero-background-image-tablet-2x.jpg);
         }
     }
 
-    @media screen and (min-width: 1200px) {
-        background-image: linear-gradient(
-                rgba(47, 48, 58, 0.4),
-                rgba(47, 48, 58, 0.4)
-            ),
-            url(/images/r-hero-background-image.jpg);
+    @media screen and (min-width: 768px) and (max-width: 1200px) {
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                rgba(47, 48, 58, 0.4)),
+            url(../images/r-hero-background-image.jpg);
 
-        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        @media screen and (min-width: 768px)and (max-width: 1200px) and (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-            background-image: linear-gradient(
-                    rgba(47, 48, 58, 0.4),
-                    rgba(47, 48, 58, 0.4)
-                ),
-                url(/images/r-hero-background-image-2x.jpg);
+            background-image: linear-gradient(rgba(47, 48, 58, 0.4),
+                    rgba(47, 48, 58, 0.4)),
+                url(../images/r-hero-background-image-2x.jpg);
         }
     }
-}   
+}
+
+//     @media screen and (min-width: 1200px) {
+//         background-image: linear-gradient(
+//                 rgba(47, 48, 58, 0.4),
+//                 rgba(47, 48, 58, 0.4)
+//             ),
+//             url(./images/r-hero-background-image.jpg);
+
+//         @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+//         (min-resolution: 192dpi),
+//         (min-resolution: 2dppx) {
+//             background-image: linear-gradient(
+//                     rgba(47, 48, 58, 0.4),
+//                     rgba(47, 48, 58, 0.4)
+//                 ),
+//                 url(./images/r-hero-background-image-2x.jpg);
+//         }
+//     }
+// }   
 
 
 
 
-// OUR TEAM SOCIAL LINK/IMG
+// OUR TEAM SOCIAL LINK./imG
 .our-team__image {
     display: block;
 }
@@ -79,33 +86,34 @@ img {
     display: flex;
     justify-content: center;
 
-        .socials__item:not(:last-child) {
-            margin-right: 10px;
-        }
+    .socials__item {
+        display: flex;
+    }
 
-        .socials__link {
-            width: 44px;
-            height: 44px;
-            background-color: variables.$background-white-color;
-            color: #AFB1B8;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border-radius: 50%;
-            transition: background-color variables.$transition-time variables.$transition-time-function,
-                color variables.$transition-time variables.$transition-time-function;
+    .socials__item:not(:last-child) {
+        margin-right: 10px;
+    }
 
-                &:hover,
-                &:focus {
-                    background-color: variables.$accent-color;
-                    color: variables.$background-white-color;
-                }
-        }
+    .socials__link {
+        width: 44px;
+        height: 44px;
+        background-color: variables.$background-white-color;
+        color: #AFB1B8;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: background-color variables.$transition-time variables.$transition-time-function,
+            color variables.$transition-time variables.$transition-time-function;
 
-        .socials__icon {
-            fill: currentColor;
+        &:hover,
+        &:focus {
+            background-color: variables.$accent-color;
+            color: variables.$background-white-color;
         }
+    }
+
+    .socials__icon {
+        fill: currentColor;
+    }
 }
- 
-
-

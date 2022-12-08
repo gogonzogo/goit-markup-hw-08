@@ -1,22 +1,17 @@
 @use '../utilities/variables.scss';
 
 .regular-customers__section {
-    width: 480px;
+    min-width: 320px;
 
     .regular-customers__list {
         display: flex;
-        flex-wrap: wrap;
-        margin-top: calc(-1 * 30px);
+        flex-direction: column;
+        
+        margin-top: 30px;
     }
 
     .regular-customers__item {
-        flex-basis: calc(100% / 2 - 30px);
         margin-top: 30px;
-        max-width: 480px;
-
-        &:nth-child(2n) {
-            margin-left: 30px;
-        }
     }
 
     .regular-customers__title {
@@ -36,8 +31,8 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 210px;
-        height: 92px;
+        min-width: 290px;
+        min-height: 92px;
         border: 1px solid;
         border-color: #AFB1B8;
         border-radius: 4px;
@@ -49,6 +44,13 @@
         &:focus {
             border-color: variables.$accent-color;
             color: variables.$accent-color;
+        }
+    }
+
+    @media screen and (min-width:480px) {
+
+        .regular-customers__item {
+            flex-wrap: wrap;
         }
     }
 }

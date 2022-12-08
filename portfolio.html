@@ -1,313 +1,276 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <!-- VIEWPORT META TAG -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- LINK TO MODERN NORMALIZE -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
-    />
-    <title>Joses Coding Demo Course HW</title>
-    <!-- LINK TO FONTS -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"/>
-    <!-- LINK TO SASS COMPILED STYLES-->
-    <link rel="stylesheet" href="./css/main.min.css" />
-  </head>
 
-  <body>
-    <!-- HEADER -->
-    <header class="header">
-      <div class="container header__container">
-        <nav class="header__nav">
-          <a class="logo header__logo" href="./index.html">WebStudio</a>
-          <!-- Header Nav -->
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="./index.html"title="Studio">Studio</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link header__nav-current-page" href="./portfolio.html" title="Portfolio">Portfolio</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Contacts</a>
-              </li>
-            </ul>  
-          </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- VIEWPORT META TAG -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- LINK TO MODERN NORMALIZE -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
+  <title>Joses Coding Demo Course HW</title>
+  <!-- LINK TO FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+    rel="stylesheet" />
+  <!-- LINK TO SASS COMPILED STYLES-->
+  <link rel="stylesheet" href="./css/main.min.css" />
+</head>
 
-          <!-- HEADER CONTACTS -->
-          <ul class="header__contacts-list">
-            <li class="header__contacts-item">
-              <a href="mailto:info@devstudio.com" class="header__contacts-link">
-                <svg class="header__contacts-icon" width="16" height="12">
-                  <use href="/images/sprite.svg#icon-envelope"></use>
-                </svg>
-                info@devstudio.com
-              </a>
-            </li>
-            <li class="header__contacts-item">
-              <a href="tel:+380961111111" class="header__contacts-link">
-                <svg class="header__contacts-icon" width="10" height="16">
-                  <use href="/images/sprite.svg#icon-smartphone"></use>
-                </svg>
-                +380961111111
-              </a>
-            </li>
-          </ul>
+<body>
+  <!-- HEADER -->
+  <header class="header">
+    <div class="container header__container">
+      <nav class="header__nav">
+        <a class="logo header__logo" href="./index.html">WebStudio</a>
+        <!-- Header Nav -->
+        <ul class="header__nav-list">
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="./index.html" title="Studio">Studio</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link header__nav-current-page" href="./portfolio.html" title="Portfolio">Portfolio</a>
+          </li>
+          <li class="header__nav-item">
+            <a class="header__nav-link" href="#">Contacts</a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- HEADER CONTACTS -->
+      <ul class="header__contacts-list">
+        <li class="header__contacts-item">
+          <a href="mailto:info@devstudio.com" class="header__contacts-link">
+            <svg class="header__contacts-icon" width="16" height="12">
+              <use href="./images/sprite.svg#icon-envelope"></use>
+            </svg>
+            info@devstudio.com
+          </a>
+        </li>
+        <li class="header__contacts-item">
+          <a href="tel:+380961111111" class="header__contacts-link">
+            <svg class="header__contacts-icon" width="10" height="16">
+              <use href="./images/sprite.svg#icon-smartphone"></use>
+            </svg>
+            +380961111111
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section portfolio-button__section">
+      <div class="container">
+        <!-- Filters Section -->
+        <ul class="portfolio-button__list">
+          <li class="portfolio-button__item"><button class="portfolio-filter current-filter" type="button">All</button>
+          </li>
+          <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Web-sites</button></li>
+          <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Apps</button></li>
+          <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Design</button></li>
+          <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Marketing</button></li>
+        </ul>
+        <!-- PRODUCT CATALOG -->
+        <ul class="product__details-list">
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img class="overlay__img" src="./images/h-product-img-one.jpg" alt="Image of open laptop" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">Technoduck is a state-of-the-art coronavirus distribution platform.
+                  Companies use this platform for digital espionage and
+                  attacks on competitors' secure servers.
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Technoduck</h3>
+              <p class="product__details-category">Web-site</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/i-product-img-two.jpg" alt="Image of two basketball players" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Poster New Orlean vs Golden Star</h3>
+              <p class="product__details-category">Design</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/j-product-img-three.jpg" alt="Image of seafood restaraunt logo" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Seafood Restaurant</h3>
+              <p class="product__details-category">Apps</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/k-product-img-four.jpg" alt="Image of headphones" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Project Prime</h3>
+              <p class="product__details-category">Marketing</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/l-product-img-five.jpg" alt="Image of product boxes" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Project Boxes</h3>
+              <p class="product__details-category">Apps</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/m-product-img-six.jpg" alt="Image of iMac" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Inspiration has no Borders</h3>
+              <p class="product__details-category">Web-site</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/n-product-img-seven.jpg" alt="Image of open book" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Limited Edition</h3>
+              <p class="product__details-category">Design</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/o-product-img-eight.jpg" alt="Image of label tag" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Project Lab</h3>
+              <p class="product__details-category">Marketing</p>
+            </div>
+          </li>
+          <li class="product__details-item">
+            <div class="overlay__container">
+              <img src="./images/p-product-img-nine.jpg" alt="Image of typing on laptop" width="370" />
+              <div class="overlay">
+                <p class="overlay__text">COMING SOON
+                </p>
+              </div>
+            </div>
+            <div class="product__description">
+              <h3 class="product__details-title">Growing Buisness</h3>
+              <p class="product__details-category">Apps</p>
+            </div>
+          </li>
+        </ul>
       </div>
-    </header>
-
-   
-    <main>
-      <section class="section portfolio-button__section">
-        <div class="container">
-          <!-- Filters Section -->
-          <ul class="portfolio-button__list">
-            <li class="portfolio-button__item"><button class="portfolio-filter current-filter" type="button">All</button></li>
-            <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Web-sites</button></li>
-            <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Apps</button></li>
-            <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Design</button></li>
-            <li class="portfolio-button__item"><button class="portfolio-filter" type="button">Marketing</button></li>
-          </ul>
-          <!-- PRODUCT CATALOG -->
-          <ul class="product__details-list">
-            <li class="product__details-item">
-              <div class="overlay__container">
-                  <img class="overlay__img"
-                    src="/images/h-product-img-one.jpg"
-                    alt="Image of open laptop"
-                    width="370"
-                  />
-                <div class="overlay">
-                  <p class="overlay__text">Technoduck is a state-of-the-art coronavirus distribution platform. 
-                    Companies use this platform for digital espionage and 
-                    attacks on competitors' secure servers.
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Technoduck</h3>
-                <p class="product__details-category">Web-site</p>
-              </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+  <footer class="footer__section">
+    <div class="container footer__container">
+      <!-- FOOTER LOGO, CONTACTS & ADDRESS -->
+      <div class="footer__container-left">
+        <a class="logo footer__logo" href="./index.html">WebStudio</a>
+        <address>
+          <ul class="footer__contacts-list">
+            <li class="footer__contacts-item">
+              <a class="footer__address" href="https://goo.gl/maps/7hkbFZoG83Kui2D87" target="_blank">695 Park Ave, New
+                York, NY 10065, United States
+              </a>
             </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/i-product-img-two.jpg"
-                  alt="Image of two basketball players"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Poster New Orlean vs Golden Star</h3>
-                <p class="product__details-category">Design</p>
-              </div>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="mailto:info@example.com">info@example.com</a>
             </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/j-product-img-three.jpg"
-                  alt="Image of seafood restaraunt logo"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Seafood Restaurant</h3>
-                <p class="product__details-category">Apps</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/k-product-img-four.jpg"
-                  alt="Image of headphones"
-                  width="370"
-                  />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Project Prime</h3>
-                <p class="product__details-category">Marketing</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/l-product-img-five.jpg"
-                  alt="Image of product boxes"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Project Boxes</h3>
-                <p class="product__details-category">Apps</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/m-product-img-six.jpg"
-                  alt="Image of iMac"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Inspiration has no Borders</h3>
-                <p class="product__details-category">Web-site</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/n-product-img-seven.jpg"
-                  alt="Image of open book"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Limited Edition</h3>
-                <p class="product__details-category">Design</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/o-product-img-eight.jpg"
-                  alt="Image of label tag"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Project Lab</h3>
-                <p class="product__details-category">Marketing</p>
-              </div>
-            </li>
-            <li class="product__details-item">
-              <div class="overlay__container">
-                <img
-                  src="/images/p-product-img-nine.jpg"
-                  alt="Image of typing on laptop"
-                  width="370"
-                />
-                <div class="overlay">
-                  <p class="overlay__text">COMING SOON
-                  </p>
-                </div>
-              </div>
-              <div class="product__description">
-                <h3 class="product__details-title">Growing Buisness</h3>
-                <p class="product__details-category">Apps</p>
-              </div>
+            <li class="footer__contacts-item">
+              <a class="footer__contacts-link" href="tel:+12127724150">+12127724150</a>
             </li>
           </ul>
-        </div>
-      </section>
-    </main>
-    <!-- FOOTER -->
-    <footer class="footer__section">
-      <div class="container footer__container">
-        <!-- FOOTER LOGO, CONTACTS & ADDRESS -->
-        <div class="footer__container-left">
-          <a class="logo footer__logo" href="./index.html">WebStudio</a>
-          <address>
-            <ul class="footer__contacts-list">
-              <li class="footer__contacts-item">
-                <a class="footer__address" href="https://goo.gl/maps/7hkbFZoG83Kui2D87"
-                  target="_blank"
-                  >695 Park Ave, New York, NY 10065, United States
-                </a>
-              </li>
-              <li class="footer__contacts-item">
-                <a class="footer__contacts-link" href="mailto:info@example.com">info@example.com</a>
-              </li>
-              <li class="footer__contacts-item">
-                <a class="footer__contacts-link" href="tel:+12127724150">+12127724150</a>
-              </li>
-            </ul>
-          </address>
-        </div>        
-        <!-- FOOTER SOCIAL LINKS -->
-        <div class="footer__container-middle">
-          <h3 class="footer__socials-title">FIND US ON</h3>
-          <ul class="footer__socials-list">
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="/images/sprite.svg#icon-instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="/images/sprite.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="/images/sprite.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer__socials-item">
-              <a href="" class="footer__socials-link">
-                <svg class="footer__socials-icon" width="20" height="20">
-                  <use href="/images/sprite.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <!-- FOOTER SUBSCRIBE FORM -->
-        <div class="footer__container-right">
-          <p class="footer__form-title">SUBSCRIBE TO THE NEWSLETTER</p>
-          <form class="footer__form" name="newsletter_signup_form" 
-          autocomplete="on" novalidate>
-            <label>
-              <input type="text" class="footer__form-input"  
-                name="email" placeholder="E-mail"/> 
-            </label>
-            <button class="footer__form-button" type="submit">Subscribe
-              <svg class="footer__form-button-icon" width="24" height="24">
-                <use href="/images/sprite.svg#icon-send"></use>
+        </address>
+      </div>
+      <!-- FOOTER SOCIAL LINKS -->
+      <div class="footer__container-middle">
+        <h3 class="footer__socials-title">FIND US ON</h3>
+        <ul class="footer__socials-list">
+          <li class="footer__socials-item">
+            <a href="" class="footer__socials-link">
+              <svg class="footer__socials-icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-instagram"></use>
               </svg>
-            </button>
-          </form>
-        </div>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="" class="footer__socials-link">
+              <svg class="footer__socials-icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="" class="footer__socials-link">
+              <svg class="footer__socials-icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__socials-item">
+            <a href="" class="footer__socials-link">
+              <svg class="footer__socials-icon" width="20" height="20">
+                <use href="./images/sprite.svg#icon-linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
       </div>
-    </footer>
-  </body>
+      <!-- FOOTER SUBSCRIBE FORM -->
+      <div class="footer__container-right">
+        <p class="footer__form-title">SUBSCRIBE TO THE NEWSLETTER</p>
+        <form class="footer__form" name="newsletter_signup_form" autocomplete="on" novalidate>
+          <label>
+            <input type="text" class="footer__form-input" name="email" placeholder="E-mail" />
+          </label>
+          <button class="footer__form-button" type="submit">Subscribe
+            <svg class="footer__form-button-icon" width="24" height="24">
+              <use href="./images/sprite.svg#icon-send"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+
 </html>
