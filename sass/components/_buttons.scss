@@ -1,21 +1,24 @@
+@use '../utilities/variables';
+
 // HERO BUTTON
 .hero__button {
     font-weight: 700;
+    font-size: 16px;
     line-height: calc(30/16);
     display: block;
     align-items: center;
     text-align: center;
-    @include button-accent-styles;
+    @extend %button-accent-styles;
     margin: auto;
     padding: 10px 20px;
     cursor: pointer;
     border: none;
-    transition: background-color $transition-time $transition-time-function,
-        opacity $transition-time $transition-time-function;
+    transition: background-color variables.$transition-time variables.$transition-time-function,
+        opacity variables.$transition-time variables.$transition-time-function;
 
         &:hover,
         &:focus {
-            background-color: $button-hover-color;
+            background-color: variables.$button-hover-color;
             opacity: 1;
         }
 }
@@ -23,96 +26,75 @@
 // MODAL BUTTONS
 .modal__close-button {
     float: right;
-    background-color: $background-white-color;
+    background-color: variables.$background-white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
     padding: 5px 7px 4px;
     cursor: pointer;
-    transition: fill $transition-time $transition-time-function,
-        border-color $transition-time $transition-time-function;
+    transition: fill variables.$transition-time variables.$transition-time-function,
+        border-color variables.$transition-time variables.$transition-time-function;
 
         &:focus,
         &:hover {
-            fill: $accent-color;
-            border-color: $accent-color;
+            fill: variables.$accent-color;
+            border-color: variables.$accent-color;
         }
 }
 
 .modal__form-button {
-    @include button-accent-styles;
+    @extend %button-accent-styles;
     display: block;
     margin: 0 auto;
     padding: 10px 80px;
-    transition: background-color $transition-time $transition-time-function,
-        opacity $transition-time $transition-time-function;
+    transition: background-color variables.$transition-time variables.$transition-time-function,
+        opacity variables.$transition-time variables.$transition-time-function;
 
         &:hover,
         &:focus {
-            background-color: $button-hover-color;
+            background-color: variables.$button-hover-color;
             opacity: 1;
         }
 }
 
 // PORTFOLIO FILTER BUTTONS
-.portfolio-button__list {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+// .portfolio-button__list {
+//     display: flex;
+//     justify-content: center;
+//     margin-bottom: 50px;
 
-        .portfolio-button__item:not(:last-child) {
-        margin-right: 10px;
-        }
+//         .portfolio-button__item:not(:last-child) {
+//         margin-right: 10px;
+//         }
 
-        .portfolio-filter {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: calc(26/16);
-            text-align: center;
-            color: $dark-text-color;
-            background-color: $background-medium-color;
-            border-radius: 4px;
-            border: none;
-            display: block;
-            padding: 6px 20px;
-            cursor: pointer;
-            transition: color $transition-time $transition-time-function,
-                backgound-color $transition-time $transition-time-function,
-                box-shadow $transition-time $transition-time-function;
+//         .portfolio-filter {
+//             font-weight: 500;
+//             font-size: 16px;
+//             line-height: calc(26/16);
+//             text-align: center;
+//             color: $dark-text-color;
+//             background-color: $background-medium-color;
+//             border-radius: 4px;
+//             border: none;
+//             display: block;
+//             padding: 6px 20px;
+//             cursor: pointer;
+//             transition: color $transition-time $transition-time-function,
+//                 backgound-color $transition-time $transition-time-function,
+//                 box-shadow $transition-time $transition-time-function;
 
-                &:hover,
-                &:focus {
-                    color: $white-text-color;
-                    background-color: $accent-color;
-                    @include portfolio-filter-box-shadow;
-                }
-        }
+//                 &:hover,
+//                 &:focus {
+//                     color: $white-text-color;
+//                     background-color: $accent-color;
+//                     @include portfolio-filter-box-shadow;
+//                 }
+//         }
 
-        .current-filter {
-            background-color: $accent-color;
-            @include portfolio-filter-box-shadow;
-            border-radius: 4px;
-            color: $white-text-color;
-        }
-}
+//         .current-filter {
+//             background-color: $accent-color;
+//             @include portfolio-filter-box-shadow;
+//             border-radius: 4px;
+//             color: $white-text-color;
+//         }
+// }
 
-// FOOTER FORM BUTTON
-.footer__form-button {
-    font-weight: 700;
-    font-size: 16px;
-    line-height: calc(30/16);
-    text-align: center;
-   @include button-accent-styles;
-    display: flex;
-    align-items: center;
-    padding: 10px 48px;
-    transition: background-color $transition-time $transition-time-function,
-        opacity $transition-time $transition-time-function;
-    cursor: pointer;
-
-        &:hover,
-        &:focus {
-            background-color: $button-hover-color;
-            opacity: 1;
-        }
-
-}

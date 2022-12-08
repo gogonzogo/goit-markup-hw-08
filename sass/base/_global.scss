@@ -1,20 +1,27 @@
+@use '../utilities/variables';
+
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0;
 }
 
 body {
+    min-width: 320px;
+    max-width: 1200px;
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.02em;
-    color: $dark-text-color;
-    background-color: $background-white-color;
+    color: variables.$dark-text-color;
+    background-color: variables.$background-white-color;
     cursor: default;
 
     a {
-    text-decoration: none;
+        text-decoration: none;
     }
 
     ul {

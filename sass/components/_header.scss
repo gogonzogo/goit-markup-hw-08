@@ -1,39 +1,96 @@
+@use '../utilities/variables';
+
+// HEADER
+
+
 .header {
     border-bottom: 1px solid #ECECEC;
+    width: 480px;
+}
 
-    .header__container {
+.header__container {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 480px;
     display: flex;
-    }
-
-    .header__logo {
-        margin-right: 97px;
-    }
+    justify-content: space-between;
 }
 
 .header__contacts-list {
-    display: flex;
-    align-items: center;
-    margin-left: auto;
+    display: none;
+}
 
-    .header__contacts-link {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: calc(16/14);
-    letter-spacing: 0.02em;
-    padding: 32px 0;
-    display: flex;
-    align-items: center;
-    color: $medium-text-color;
-    transition: color $transition-time $transition-time-function;
+@media all and (min-width:767px) {
+.header {
+    width: 768px;
+}
 
-        &:hover,
-        &:focus {
-            color: $accent-color;
-        }
+    .header__container {
+        width: 768px;
     }
 
-    .header__contacts-item:not(:last-child) {
-        margin-right: 50px;
+    .header__contacts-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: 21px 0;
+
+        .header__contacts-link {
+            font-weight: 500;
+            font-size: 14px;
+            line-height: calc(16/14);
+            letter-spacing: 0.02em;
+            display: flex;
+            align-items: center;
+            color: variables.$medium-text-color;
+            transition: color variables.$transition-time variables.$transition-time-function;
+
+            &:hover,
+            &:focus {
+                color: variables.$accent-color;
+            }
+        }
+
+        .header__contacts-item:not(:last-child) {
+            padding-bottom: 10px;
+        }
+
+        .header__contacts-icon {
+            margin-right: 10px;
+            fill: currentColor;
+        }
     }
 }
 
+@media all and (min-width: 1200px) {
+    .header {
+            width: 1200px;
+        }
+    
+        .header__container {
+            width: 1200px;
+        }
+    .header__contacts-list {
+
+        flex-direction: row;
+        align-items: center;
+        margin: 0 auto;
+
+        .header__contacts-link {
+            padding: 32px 0;
+            display: flex;
+            align-items: center;
+
+            &:hover,
+            &:focus {
+                color: variables.$accent-color;
+            }
+        }
+
+        .header__contacts-item:not(:last-child) {
+            margin-right: 50px;
+            padding-bottom: 0;
+        }
+    }
+}

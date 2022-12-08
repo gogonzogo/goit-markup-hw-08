@@ -1,48 +1,86 @@
-/* OUR TEAM */
+@use '../utilities/variables.scss';
+
+// OUR TEAM
 .our-team__section {
-    background-color: $background-medium-color;
+    width: 480px;
+    background-color: variables.$background-medium-color;
 
     .our-team__title {
         font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42/36);
+        font-size: 28px;
+        line-height: calc(33/28);
         text-align: center;
-        padding-bottom: 50px;
+        color: variables.$dark-text-color;
+        padding-bottom: 30px;
     }
 
     .our-team__list {
         display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 
-        .our-team__item {
-            box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-            border-radius: 0px 0px 4px 4px;
+    .our-team__item {
+        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+        border-radius: 0px 0px 4px 4px;
 
-            &:not(:last-child) {
-                margin-right: 30px;
-            }
+        &:not(:last-child) {
+            margin-bottom: 30px;
         }
+    }
 
-        .our-team__item-description {
-            background-color: $background-white-color;
-            padding-top: 30px;
-            padding-bottom: 30px;
-        }
+    .our-team__item-description {
+        background-color: variables.$background-white-color;
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
 
-        .our-team__name {
-            font-weight: 500;
-            font-size: 16px;
-            line-height: calc(19/16);
-            text-align: center;
-            margin-bottom: 10px;
-        }
+    .our-team__name {
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(19/16);
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 10px;
+        color: variables.$dark-text-color;
+    }
 
-        .our-team__role {
-            font-size: 16px;
-            line-height: calc(19/16);
-            text-align: center;
-            color: $dark-text-color;
-            margin-bottom: 16px;
-        }
+    .our-team__role {
+        font-size: 16px;
+        line-height: calc(19/16);
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-bottom: 16px;
+        color: variables.$medium-text-color
     }
 }
 
+
+// .our-team__section{
+//     display: none;
+// }
+
+// @media all and (min-width: 768px) {
+
+
+//     .our-team__title {
+        
+//         padding-bottom: 50px;
+//     }
+
+//     .our-team__list {
+//         display: flex;
+
+//         .our-team__item {
+            
+
+//             &:not(:last-child) {
+//                 margin-right: 30px;
+//             }
+//         }
+
+        
+        
+//     }
+// }
+// }

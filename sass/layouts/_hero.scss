@@ -1,11 +1,29 @@
-/* HERO */
+@use '../utilities/variables';
+
+
+.hero__section {
+    width: 480px;
+}
+
 .hero__title {
     font-weight: 900;
-    font-size: 44px;
-    line-height: calc(60/44);
+    font-size: 26px;
+    line-height: calc(42/26);
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    color: $white-text-color;
+    color: variables.$white-text-color;
     margin-bottom: 30px;
+}
+
+
+@media screen and (min-width: 1200) {
+    .hero__section {
+        padding: 200 0;
+
+        .hero__title {
+                font-size: 44px;
+                line-height: calc(60/44);
+            }
+    }
 }

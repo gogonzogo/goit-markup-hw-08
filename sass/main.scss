@@ -1,25 +1,206 @@
-@import './utilities/variables.scss';
+@use './utilities/variables.scss';
+
+@use './base/section';
+@use './base/containers';
+@use './base/global';
+@use './layouts/benefits';
+@use './layouts/hero';
+@use './layouts/our-team';
+// @use './layouts/portfolio-products';
+@use './layouts/regular-customers';
+@use './layouts/what-we-do';
+@use './components/buttons';
+// @use './components/footer';
+@use './components/forms';
+@use './components/images';
+@use './components/logo';
+@use './components/modal';
+@use './components/navigation';
+@use './components/header';
+@use './components/mobile-menu';
+
+
+.footer__section {
+    width: 480px;
+    background-color: variables.$background-dark-color;
+    
+    .footer__container-left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__address {
+        font-style: normal;
+            font-size: 14px;
+            line-height: calc(24/14);
+            letter-spacing: 0.03em;
+            color: variables.$white-text-color;
+            transition: color variables.$transition-time variables.$transition-time-function;
+            margin-bottom: 27px;
+            display: flex;
+            
+            &:hover,
+            &:focus {
+                color: variables.$accent-color;
+            }
+    }
+    
+        .footer__contacts-list{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 48px;
+        }
+
+        .footer__contacts-link {
+            font-style: normal;
+            font-size: 14px;
+            line-height: calc(24/14);
+            color: variables.$white-text-color;
+            opacity: 0.6;
+            transition: color variables.$transition-time variables.$transition-time-function;
+
+            &:hover,
+            &:focus {
+                color: variables.$accent-color;
+            }
+        }
+
+        // // FOOTER CONTAINER MIDDLE SOCIAL LINKS
+        .footer__container-middle {
+            display: flex;
+            flex-direction: column;
+
+            .footer__socials-title {
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 16px;
+                letter-spacing: 0.03em;
+                text-transform: uppercase;
+                text-align: center;
+                color: variables.$white-text-color;
+                margin-bottom: 20px;
+            }
+
+            .footer__socials-list {
+                display: flex;
+                justify-content: center;
+                margin-bottom: 60px;
+            }
+
+            .footer__socials-item:not(:last-child) {
+                margin-right: 10px;
+            }
+
+            .footer__socials-link {
+                width: 44px;
+                height: 44px;
+                background-color: rgba(255, 255, 255, 0.1);
+                fill: variables.$white-text-color;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                transition: background-color variables.$transition-time variables.$transition-time-function,
+                    color variables.$transition-time variables.$transition-time-function;
+
+                &:hover,
+                &:focus {
+                    background-color: variables.$accent-color;
+                    color: variables.$dark-text-color;
+                }
+            }
+        }
+
+// FOOTER FORM
+.footer__form-title {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: variables.$white-text-color;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer__form-input {
+        font-size: 14px;
+        line-height: calc(24/14);
+        padding-left: 16px;
+        color: variables.$white-text-color;
+        width: 450px;
+        height: 50px;
+        margin-bottom: 20px;
+        background-color: variables.$background-dark-color;
+        outline: none;
+
+        &:not(:placeholder-shown) {
+            border: 2px solid variables.$accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        &:placeholder-shown {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            transition: border-color variables.$transition-time variables.$transition-time-function;
+            cursor: pointer;
+
+            &:placeholder-shown:hover,
+            &:placeholder-shown:focus {
+                border-color: rgb(255, 255, 255);
+            }
+        }
+
+    }
+
+    .footer__form-button-icon {
+        margin-left: 25px;
+    }
+}
+        // // FOOTER FORM BUTTON
+        .footer__form-button {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: calc(30/16);
+            text-align: center;
+            background: variables.$accent-color;
+            border-color: variables.$accent-color;
+            color: variables.$white-text-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+            letter-spacing: 0.06em;
+            display: flex;
+            align-items: center;
+            padding: 10px 48px;
+            transition: background-color variables.$transition-time variables.$transition-time-function,
+                opacity variables.$transition-time variables.$transition-time-function;
+            cursor: pointer;
+
+            &:hover,
+            &:focus {
+                background-color: variables.$button-hover-color;
+                opacity: 1;
+            }
+
+        }
+}
 
 
 
-@import './base/section';
-@import './base/containers';
-@import './base/global';
-@import './layouts/benefits';
-@import './layouts/hero';
-@import './layouts/our-team';
-@import './layouts/portfolio-products';
-@import './layouts/regular-customers';
-@import './layouts/what-we-do';
-@import './components/buttons';
-@import './components/footer';
-@import './components/forms';
-@import './components/images';
-@import './components/logo';
-@import './components/modal';
-@import './components/navigation';
-@import './components/header';
 
-
-
-@import './components/media';
