@@ -1,13 +1,21 @@
 @use '../utilities/variables';
 
 // MODAL FORM
+.modal__form-container {
+    min-width: 320px;
+
+    @media screen and (min-width: 480px) {
+            width: 370px;
+        }
+}
+
 .modal__form-title {
-    margin-top: 40px;
     margin-bottom: 12px;
     font-weight: 700;
     font-size: 20px;
     line-height: 23px;
     letter-spacing: 0.03em;
+    text-align: center;
     color: variables.$dark-text-color;
 }
 
@@ -36,7 +44,7 @@
 }
 
 .modal__form-field {
-    width: 448px;
+    width: 270px;
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -59,6 +67,10 @@
     &:not(:placeholder-shown) {
         border-color: variables.$accent-color;
     }
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
+    }
 }
 
 .modal__icon {
@@ -72,7 +84,7 @@
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.01em;
-    width: 448px;
+    width: 270px;
     padding-top: 12px;
     padding-left: 16px;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -92,6 +104,10 @@
     &:hover,
     &:focus {
         border-color: variables.$accent-color;
+    }
+
+    @media screen and (min-width: 480px) {
+        width: 370px;
     }
 }
 
@@ -137,5 +153,71 @@
         font-size: 14px;
         line-height: calc(24/14);
         letter-spacing: 0.03em;
+    }
+}
+
+// FOOTER FORM
+.footer__form-title {
+    margin-bottom: 20px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(16/14);
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 20px;
+    color: variables.$white-text-color;
+}
+
+.footer__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &::placeholder {
+        color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer__form-input {
+        font-size: 14px;
+        line-height: calc(24/14);
+        padding-left: 16px;
+        color: variables.$white-text-color;
+        width: 290px;
+        height: 50px;
+        margin-bottom: 20px;
+        background-color: variables.$background-dark-color;
+        outline: none;
+
+        &:not(:placeholder-shown) {
+            border: 2px solid variables.$accent-color;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+            border-radius: 4px;
+        }
+
+        &:placeholder-shown {
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+            border-radius: 4px;
+            transition: border-color variables.$transition-time variables.$transition-time-function;
+            cursor: pointer;
+
+            &:placeholder-shown:hover,
+            &:placeholder-shown:focus {
+                border-color: rgb(255, 255, 255);
+            }
+        }
+    }
+
+    .footer__form-button-icon {
+        margin-left: 25px;
+    }
+
+    @media screen and (min-width: 480px) {
+        .footer__form-input {
+            width: 450px;
+        }
     }
 }

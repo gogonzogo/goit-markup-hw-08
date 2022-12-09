@@ -2,22 +2,20 @@
 
 // HEADER NAV
 .header__nav {
-
-
     .header__nav-list {
         display: none;
     }
 }
 
-@media all and (min-width: 480px) {
+@media screen and (min-width: 480px) {
     .header__nav {
         min-width: 320px;
         max-width: 1170px;
     }
-}
+} 
 
 // TABLET NAV
-@media all and (min-width: 767px) {
+@media all and (min-width: 768px) {
     .header__nav {
         display: flex;
         align-items: center;

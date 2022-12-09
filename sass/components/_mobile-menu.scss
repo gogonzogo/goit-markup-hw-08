@@ -1,3 +1,5 @@
+@use '../utilities/variables.scss';
+
 .mobile__menu-container {
   display: flex;
  
@@ -54,7 +56,7 @@
   width: 100vw;
   height: 100vh;
   padding: 32px;
-  background-color: #3f51b5;
+  background-color: variables.$background-white-color;
   z-index: 999;
 
   transform: translateX(100%);
@@ -69,7 +71,7 @@
   position: absolute;
   top: 16px;
   right: 16px;
-  color: #fff;
+  color: variables.$dark-text-color;
 }
 
 .mobile-menu {
@@ -81,6 +83,7 @@
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: #fff;
+  color: variables.$dark-text-color;
   text-decoration: none;
 }
+
