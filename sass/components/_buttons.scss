@@ -25,7 +25,7 @@
 
 // MODAL BUTTONS
 .modal__close-button {
-    margin-left: 99%;
+    margin-left: 97%;
     background-color: variables.$background-white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
@@ -81,49 +81,54 @@
          background-color: variables.$button-hover-color;
          opacity: 1;
      }
-
- }
+}
+ 
+@media screen and (min-width: 1200px) {
+    .footer__form-button {
+        padding: 10px 40px;
+    }
+}
  
 
 // PORTFOLIO FILTER BUTTONS
-// .portfolio-button__list {
-//     display: flex;
-//     justify-content: center;
-//     margin-bottom: 50px;
+.portfolio-button__list {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
 
-//         .portfolio-button__item:not(:last-child) {
-//         margin-right: 10px;
-//         }
+        .portfolio-button__item:not(:last-child) {
+        margin-right: 10px;
+        }
 
-//         .portfolio-filter {
-//             font-weight: 500;
-//             font-size: 16px;
-//             line-height: calc(26/16);
-//             text-align: center;
-//             color: $dark-text-color;
-//             background-color: $background-medium-color;
-//             border-radius: 4px;
-//             border: none;
-//             display: block;
-//             padding: 6px 20px;
-//             cursor: pointer;
-//             transition: color $transition-time $transition-time-function,
-//                 backgound-color $transition-time $transition-time-function,
-//                 box-shadow $transition-time $transition-time-function;
+        .portfolio-filter {
+            font-weight: 500;
+            font-size: 16px;
+            line-height: calc(26/16);
+            text-align: center;
+            color: variables.$dark-text-color;
+            background-color: variables.$background-medium-color;
+            border-radius: 4px;
+            border: none;
+            display: block;
+            padding: 6px 20px;
+            cursor: pointer;
+            transition: color variables.$transition-time variables.$transition-time-function,
+                backgound-color variables.$transition-time variables.$transition-time-function,
+                box-shadow variables.$transition-time variables.$transition-time-function;
 
-//                 &:hover,
-//                 &:focus {
-//                     color: $white-text-color;
-//                     background-color: $accent-color;
-//                     @include portfolio-filter-box-shadow;
-//                 }
-//         }
+                &:hover,
+                &:focus {
+                    color: variables.$white-text-color;
+                    background-color: variables.$accent-color;
+                    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+                }
+        }
 
-//         .current-filter {
-//             background-color: $accent-color;
-//             @include portfolio-filter-box-shadow;
-//             border-radius: 4px;
-//             color: $white-text-color;
-//         }
-// }
+        .current-filter {
+            background-color: variables.$accent-color;
+            box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+            border-radius: 4px;
+            color: variables.$white-text-color;
+        }
+}
 

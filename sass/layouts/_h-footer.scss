@@ -1,7 +1,10 @@
 @use '../utilities/variables';
-
 .footer__section {
-    min-width: 320px;
+    background-color: variables.$background-dark-color
+}
+
+.footer__container {
+    
     background-color: variables.$background-dark-color;
 
     .footer__container-left {
@@ -96,7 +99,7 @@
 
 @media screen and (min-width:768px) {
     .footer__section {
-        min-width: 768px;
+        
 
         .footer__container {
             min-width: 738px;
@@ -113,15 +116,12 @@
 
 @media screen and (min-width: 1200px) {
     .footer__section {
-    width: 1600px;
+    
 
         .footer__container {
-            max-width: 1170px;
             flex-direction: row;
             justify-content: normal;
             align-items: baseline;
-            width: 1200px;
-
         }
 
 

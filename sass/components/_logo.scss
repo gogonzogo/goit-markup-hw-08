@@ -10,13 +10,13 @@
 }
 
 @media all and (min-width: 768px) {
-    .logo {
+    .header__logo {
         padding-right: 88px;
     }
 }
 
 @media all and (min-width: 1200px) {
-    .logo {
+    .header__logo {
         padding-right: 93px;
         font-size: 26px;
         line-height: calc(31/26);

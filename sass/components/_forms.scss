@@ -220,4 +220,22 @@
             width: 450px;
         }
     }
+
+    
+}
+
+@media screen and (min-width: 1200px) {
+
+    .footer__form {
+        flex-direction: row;
+        align-items: baseline;
+
+        .footer__form-input {
+                width: 350px;
+                margin-right: 10px;
+            }
+    }
+
+    
+
 }

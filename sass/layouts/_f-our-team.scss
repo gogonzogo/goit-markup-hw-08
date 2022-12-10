@@ -2,99 +2,107 @@
 
 // OUR TEAM
 .our-team__section {
-    min-width: 320px;
     background-color: variables.$background-medium-color;
+}
 
-    .our-team__title {
-        font-weight: 700;
-        font-size: 28px;
-        line-height: calc(33/28);
-        text-align: center;
-        color: variables.$dark-text-color;
-        padding-bottom: 30px;
+.our-team__title {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: calc(33/28);
+    text-align: center;
+    color: variables.$dark-text-color;
+    padding-bottom: 30px;
+}
+
+.our-team__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our-team__item {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+
+    &:not(:last-child) {
+        margin-bottom: 30px;
     }
+}
 
+.our-team__item-description {
+    background-color: variables.$background-white-color;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.our-team__name {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 10px;
+    color: variables.$dark-text-color;
+}
+
+.our-team__role {
+    font-size: 16px;
+    line-height: calc(19/16);
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 16px;
+    color: variables.$medium-text-color
+}
+
+@media screen and (min-width: 768px) {  
     .our-team__list {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * 30px);
+        margin-left: calc(-1 * 30px);
     }
 
     .our-team__item {
-        box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-        border-radius: 0px 0px 4px 4px;
+        margin-top: 30px;
+        flex-basis: calc(100% / 2 - 30px);
+        margin-left: 30px;
 
         &:not(:last-child) {
-            margin-bottom: 30px;
+            margin-bottom: 0;
         }
     }
 
     .our-team__item-description {
-        background-color: variables.$background-white-color;
-        padding-top: 30px;
-        padding-bottom: 30px;
-    }
-
-    .our-team__name {
-        font-weight: 500;
-        font-size: 16px;
-        line-height: calc(19/16);
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 10px;
-        color: variables.$dark-text-color;
-    }
-
-    .our-team__role {
-        font-size: 16px;
-        line-height: calc(19/16);
-        text-align: center;
-        letter-spacing: 0.03em;
-        margin-bottom: 16px;
-        color: variables.$medium-text-color
+        max-width: 354px;
     }
 }
 
-@media screen and (min-width: 768px) {
-    .our-team__section {
-        min-width: 768px;
 
-        .our-team__list {
-            flex-direction: row;
-            flex-wrap: wrap;
-            margin-top: calc(-1 * 30px);
-            margin-left: calc(-1 * 30px);
+@media screen and (min-width: 1024px) {
+    .our-team__list {
+            justify-content: space-evenly;
         }
-
+    
         .our-team__item {
-            width: 354px;
             margin-top: 30px;
-            flex-basis: calc(100% / 2 - 30px);
-            margin-left: 30px;
-
-            &:not(:last-child) {
-                margin-bottom: 0;
-            }
+            flex-basis: auto;
         }
-    }
+}
 
-    @media screen and (min-width: 1200px) {
-        .our-team__section {
-            width: 1600px;
 
-            .our-team__title {
-                font-size: 36px;
-                line-height: calc(42/36);
-            }
-
-            .our-team__list {
-                flex-wrap: nowrap;
-                
-            }
-
-            .our-team__item {
-                width: 270px;
-            }
+@media screen and (min-width: 1200px) {
+    .our-team__title {
+            font-size: 36px;
+            line-height: calc(42/36);
         }
-    }
+    
+        .our-team__list {
+            flex-wrap: nowrap;
+    
+        }
+    
+        .our-team__item {
+            width: 270px;
+        }
 }

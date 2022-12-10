@@ -4,15 +4,17 @@
     display: none;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1024px) {
 
-.what-we-do__section {
-    padding-bottom: 94px;
+    .what-we-do__section {
+        display: flex;
+        padding-top: 0;
+    }
 
     .what-we-do__title {
         font-weight: 700;
-        font-size: 36px;
-        line-height: calc(42/36);
+        font-size: 26px;
+        line-height: calc(33/26);
         text-align: center;
         padding-bottom: 50px;
     }
@@ -24,7 +26,7 @@
         .what-we-do__item {
             position: relative;
 
-             &:not(:last-child) {
+            &:not(:last-child) {
                 margin-right: 30px;
             }
         }
@@ -47,6 +49,13 @@
             display: flex;
         }
     }
+
 }
 
+@media screen and (min-width: 1200px) {
+
+    .what-we-do__title {
+        font-size: 36px;
+        line-height: calc(42/36);
+    }
 }
