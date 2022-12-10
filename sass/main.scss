@@ -3,18 +3,20 @@
 @use './base/section';
 @use './base/containers';
 @use './base/global';
-@use './layouts/benefits';
-@use './layouts/hero';
-@use './layouts/our-team';
-// @use './layouts/portfolio-products';
-@use './layouts/regular-customers';
-@use './layouts/what-we-do';
+
 @use './components/buttons';
-@use './components/footer';
 @use './components/forms';
 @use './components/images';
 @use './components/logo';
 @use './components/modal';
-@use './components/navigation';
-@use './components/header';
 @use './components/mobile-menu';
+
+// @use './layouts/portfolio-products';
+@use './layouts/h-footer';
+@use './layouts/d-benefits';
+@use './layouts/c-hero';
+@use './layouts/f-our-team';
+@use './layouts/g-regular-customers';
+@use './layouts/e-what-we-do';
+@use './layouts/b-navigation';
+@use './layouts/a-header';
