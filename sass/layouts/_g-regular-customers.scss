@@ -1,8 +1,7 @@
 @use '../utilities/variables.scss';
 
-.regular-customers__container {
 
-    .regular-customers__list {
+.regular-customers__list {
         display: flex;
         flex-wrap: wrap;
         margin-top: calc(-1 * 30px);
@@ -48,24 +47,29 @@
             color: variables.$accent-color;
         }
     }
+
+@media screen and (min-width: 480px) {
+    .regular-customers__container {
+        max-width: 210px;
+        margin: 0 auto;
+    }
 }
 
 
  @media screen and (min-width: 768px) {
     .regular-customers__container {
+        max-width: 768px;
+        margin: 0 auto;    
+    }
 
-        .regular-customers__item {
+    .regular-customers__item {
         flex-basis: calc(100% / 3 - 30px);
-        }
     }
  }
 
  @media screen and (min-width: 1200px) {
-    .regular-customers__section {
-       
-
         .regular-customers__container {
-
+            max-width: 1200px;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -98,5 +102,5 @@
             width: 170px;
         }
     }
- }
+ 
 

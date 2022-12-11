@@ -13,7 +13,8 @@
     visibility: variables.$transition-time variables.$transition-time-function;
 
     .modal__window {
-        position: absolute;
+        position: relative;
+        width: 300px;
         max-height: 609px;
         background-color: variables.$background-white-color;
         box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -21,11 +22,11 @@
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-        padding: 0 20px;
+        padding: 30px;
 
         @media screen and (min-width: 480px) {
                 width: 450px;
-                padding: 0 40px;
+                padding: 40px;
             }
     }
 }
