@@ -7,7 +7,6 @@
     }
 }
 
-
 // TABLET NAV
 @media all and (min-width: 768px) {
     .header__nav {
@@ -47,7 +46,7 @@
             content: '';
             width: 100%;
             height: 4px;
-            bottom: -3px;
+            bottom: -1px;
             left: 0;
             background-color: variables.$accent-color;
             border-radius: 2px;
@@ -65,7 +64,7 @@
             content: '';
             width: 100%;
             height: 4px;
-            bottom: -3px;
+            bottom: -1px;
             left: 0;
             background-color: variables.$accent-color;
             border-radius: 2px;

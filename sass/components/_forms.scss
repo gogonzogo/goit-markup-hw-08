@@ -11,22 +11,35 @@
 
 .modal__form-title {
     margin-bottom: 12px;
+    margin-top: 40px;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
+    font-size: 13px;
+    line-height: calc(16/13);
     letter-spacing: 0.03em;
     text-align: center;
     color: variables.$dark-text-color;
+
+    @media screen and (min-width: 480px) {
+        font-size: 20px;
+        line-height: calc(23/20);
+    }
 }
 
 .modal__form ::placeholder {
-    font-size: 12px;
-    line-height: 14px;
+    font-size: 10px;
+    line-height: calc(12/10);
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
+
+    @media screen and (min-width: 480px) {
+            font-size: 12px;
+            line-height: calc(14/12);
+        }
 }
 
 .modal__form-label {
+    font-size: 11px;
+    line-height: calc(21/14);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -41,6 +54,11 @@
     &:focus .modal__icon {
         fill: variables.$accent-color;
     }
+
+        @media screen and (min-width: 480px) {
+            font-size: 14px;
+            line-height: calc(24/14);
+        }
 }
 
 .modal__form-field {
@@ -75,14 +93,18 @@
 
 .modal__icon {
     position: absolute;
-    top: 50%;
+    top: 45%;
     margin-left: 12px;
     fill: black;
+
+    @media screen and (min-width:480px) {
+        top: 50%;
+    }
 }
 
 .modal__form-comments {
-    font-size: 14px;
-    line-height: calc(16/14);
+    font-size: 12px;
+    line-height: calc(14/12);
     letter-spacing: 0.01em;
     width: 270px;
     padding-top: 12px;
@@ -108,12 +130,14 @@
 
     @media screen and (min-width: 480px) {
         width: 370px;
+        font-size: 14px;
+        line-height: calc(16/14);
     }
 }
 
 .modal__form-checkbox-label {
-    font-size: 14px;
-    line-height: calc(24/14);
+    font-size: 11px;
+    line-height: calc(21/11);
     letter-spacing: 0.03em;
     color: variables.$medium-text-color;
     position: relative;
@@ -123,6 +147,11 @@
     padding-right: 40px;
     padding-left: 10px;
 
+    @media screen and (min-width: 480px) {
+            font-size: 14px;
+            line-height: calc(24/14);
+        }
+
     .modal__form-checkbox {
         opacity: 0;
 
@@ -130,6 +159,8 @@
             border: none;
             background-color: variables.$accent-color;
         }
+
+        
     }
 
     .modal__checkbox {
@@ -150,11 +181,17 @@
     }
 
     .terms-conditions__link {
-        font-size: 14px;
-        line-height: calc(24/14);
+        font-size: 11px;
+        line-height: calc(21/11);
         letter-spacing: 0.03em;
+
+        @media screen and (min-width: 480px) {
+                font-size: 14px;
+                line-height: calc(24/14);
+            }
     }
 }
+
 
 // FOOTER FORM
 .footer__form-title {
@@ -219,9 +256,7 @@
         .footer__form-input {
             width: 450px;
         }
-    }
-
-    
+    }    
 }
 
 @media screen and (min-width: 1200px) {

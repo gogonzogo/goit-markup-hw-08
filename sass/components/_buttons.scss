@@ -25,7 +25,7 @@
 
 // MODAL BUTTONS
 .modal__close-button {
-    margin-left: 97%;
+    float: right;
     background-color: variables.$background-white-color;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
