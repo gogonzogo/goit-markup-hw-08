@@ -6,40 +6,32 @@
     display: none;
 }
 
-
 .header {
     border-bottom: 1px solid #ECECEC;
-    min-width: 320px;
-
-    .header__container {
-        padding-top: 16px;
-        padding-bottom: 16px;
-        width: 320px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-
-    @media screen and (min-width:480px) {
-        .header {
-            width: 480px;
-        }
-
-        .header__container {
-            width: 480px;
-        }
-    }
 }
 
+.header__container {
+    width: 320px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 320px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
-
-@media sceen and (min-width: 768px) {
-    .header__contacts-list {
-        display: flex;
+@media screen and (min-width: 480px) { 
+    .header__container {
+        max-width: 480px;
+        margin: 0 auto;
     }
 }
 
 @media screen and (min-width: 768px) {
+.header__container {
+    max-width: 768px;
+}
+
     .header__contacts-list {
         display: flex;
         flex-direction: column;
@@ -76,11 +68,11 @@
 
 @media all and (min-width: 1200px) {
     .header {
-        width: 1200px;
+        max-width: 1200px;
     }
 
     .header__container {
-        width: 1200px;
+        max-width: 1200px;
     }
 
     .header__contacts-list {

@@ -20,8 +20,17 @@
     display: none;
 }
 
+@media screen and (min-width: 480px) {
+    .header__container{
+        max-width: 480px;
+    }
+}
+
+
+
 @media screen and (min-width: 768px) {
-    .header__container {     
+    .header__container {   
+        max-width: 768px;  
         padding-bottom: 0;
         padding-top: 0;
     }
@@ -59,8 +68,9 @@
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
     .header__container {
+        max-width: 1200px;
         padding-top: 0;
         
     }

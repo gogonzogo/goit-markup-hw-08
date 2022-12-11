@@ -5,8 +5,7 @@
 
 // PORTFOLIO PRODUCTS
 .product__details-container {
-    max-width: 320px;
-    margin: 0 auto;
+    min-width: 320px;
 
     @media screen and (min-width: 480px) {
         max-width: 480px;
@@ -23,7 +22,8 @@
 
 .product__details-list {
     display: flex;
-    flex-wrap: wrap;  
+    flex-direction: column;
+    align-items: center;
 }
 
 .product__details-item {
@@ -49,9 +49,11 @@
 }
 
 @media screen and (min-width: 768px) {
-    .product__details-item {
-            margin-top: calc(-1 * 30px);
-                margin-left: calc(-1 * 30px);
+    .product__details-list {
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-top: calc(-1 * 30px);
+        margin-left: calc(-1 * 30px);
                 
     }
 
@@ -61,6 +63,8 @@
         margin-top: 30px;
         max-width: 370px;
     }
+
+    
 }
 
 @media screen and (min-width: 1200px) {
@@ -69,10 +73,17 @@
     }
 }
 
+
+@media screen and (min-width: 768px) {
+    .product__description {
+        height: 142px;
+    }
+}
+
 .product__description {
     background-color: variables.$background-white-color;
     padding: 20px 24px;
-    border: 1px, solid #EEEEEE;
+    border: 1px solid #EEEEEE;
 
     .product__details-title {
         font-weight: 700;
