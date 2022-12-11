@@ -1,33 +1,71 @@
 @use '../utilities/variables';
 
+
+
+
 // PORTFOLIO PRODUCTS
+.product__details-container {
+    max-width: 320px;
+    margin: 0 auto;
+
+    @media screen and (min-width: 480px) {
+        max-width: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        max-width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1200px;
+    }
+}
+
 .product__details-list {
     display: flex;
-    flex-wrap: wrap;
-    margin-top: calc(-1 * 30px);
-    margin-left: calc(-1 * 30px);
+    flex-wrap: wrap;  
+}
 
+.product__details-item {
+    border: 1px solid #EEEEEE;
+    cursor: pointer;
+    transition: box-shadow variables.$transition-time variables.$transition-time-function,
+        transform variables.$transition-time variables.$transition-time-function;
+
+    &:hover {
+        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+            0px 4px 4px rgba(0, 0, 0, 0.06),
+            1px 4px 6px rgba(0, 0, 0, 0.16);
+        transform: translate(0);
+    }
+
+    &:hover .overlay {
+        transform: translate(0);
+    }
+
+    &:not(:first-child) {
+            margin-top: 30px;
+        }
+}
+
+@media screen and (min-width: 768px) {
+    .product__details-item {
+            margin-top: calc(-1 * 30px);
+                margin-left: calc(-1 * 30px);
+                
+    }
 
     .product__details-item {
-        flex-basis: calc(100% / 3 - 30px);
+        flex-basis: calc(100% / 2 - 30px);
         margin-left: 30px;
         margin-top: 30px;
         max-width: 370px;
-        border: 1px solid #EEEEEE;
-        cursor: pointer;
-        transition: box-shadow variables.$transition-time variables.$transition-time-function,
-            transform variables.$transition-time variables.$transition-time-function;
+    }
+}
 
-        &:hover {
-            box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
-                0px 4px 4px rgba(0, 0, 0, 0.06),
-                1px 4px 6px rgba(0, 0, 0, 0.16);
-            transform: translate(0);
-        }
-
-        &:hover .overlay {
-            transform: translate(0);
-        }
+@media screen and (min-width: 1200px) {
+    .product__details-item {
+        flex-basis: calc(100% / 3 - 30px);
     }
 }
 
