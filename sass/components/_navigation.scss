@@ -59,7 +59,7 @@
         text-decoration: none;
         padding: 32px 0;
 
-        &:after {
+        &::after {
             position: absolute;
             content: '';
             width: 100%;

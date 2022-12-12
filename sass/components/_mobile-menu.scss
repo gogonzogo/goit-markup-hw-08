@@ -130,8 +130,11 @@
 }
 
 .contacts-menu {
-  margin-top: 302px;
-  
+  position: absolute;
+  bottom: 110px;
+  left: 32px;  
+
+
   .email__link {
     font-weight: 500;
     font-size: 20px;
@@ -156,14 +159,17 @@
 }
 
 .social-menu {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
   display: flex;
   margin-right: 0;
   margin-bottom: 16px;
   
   .social-menu__link {
     font-weight: 500;
-    font-size: 13px;
-    line-height: calc(15/13);
+    font-size: 11px;
+    line-height: calc(15/11);
     letter-spacing: 0.01em;
     color: #2196F3;
     margin-top: 64px;

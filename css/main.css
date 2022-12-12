@@ -775,7 +775,9 @@ img {
 }
 
 .contacts-menu {
-  margin-top: 302px;
+  position: absolute;
+  bottom: 110px;
+  left: 32px;
 }
 .contacts-menu .email__link {
   font-weight: 500;
@@ -796,14 +798,17 @@ img {
 }
 
 .social-menu {
+  position: absolute;
+  bottom: 32px;
+  left: 32px;
   display: flex;
   margin-right: 0;
   margin-bottom: 16px;
 }
 .social-menu .social-menu__link {
   font-weight: 500;
-  font-size: 13px;
-  line-height: 1.1538461538;
+  font-size: 11px;
+  line-height: 1.3636363636;
   letter-spacing: 0.01em;
   color: #2196F3;
   margin-top: 64px;
@@ -1391,15 +1396,15 @@ img {
   display: none;
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .what-we-do__section {
     display: flex;
     padding-top: 0;
   }
   .what-we-do__title {
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.2692307692;
+    font-size: 36px;
+    line-height: 1.1666666667;
     text-align: center;
     padding-bottom: 50px;
   }
@@ -1429,12 +1434,6 @@ img {
     justify-content: center;
     align-items: center;
     display: flex;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .what-we-do__title {
-    font-size: 36px;
-    line-height: 1.1666666667;
   }
 }
 .header__nav .header__nav-list {
